@@ -1,0 +1,9 @@
+.statistics {
+  margin: 20px auto;
+  width: 200px;
+}
+
+.statistiscItem {
+  display: flex;
+  justify-content: space-between;
+}
