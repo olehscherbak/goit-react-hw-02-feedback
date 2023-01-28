@@ -1,6 +1,8 @@
+import textColorChange from 'utils/textColorChange';
 import css from './Statistics.module.css'
 
 export default function Statistics({ good, neutral, bad, total, positivePercentage }) {
+    
     return (
         <div className={css.statistics}>
         <h2 className="title">Statistics</h2>
@@ -22,7 +24,7 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
             </p>
             <p className={css.statistiscItem}>
                 <span>Positive feedback: </span>
-                <span>{positivePercentage}</span>
+                <span  style={{ color: textColorChange(good, neutral, bad, total), fontWeight: "bold" }}>{positivePercentage}</span>
             </p>
     </div>
     );

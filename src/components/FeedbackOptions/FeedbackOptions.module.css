@@ -1,0 +1,28 @@
+.feedbackControls {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.buttonListItem:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  width: 64px;
+  border: none;
+  border-radius: 3px;
+  /* background-color: blue; */
+  box-shadow: inset 0 0 24px 24px red, 0 0 0 0 red;
+  transition: box-shadow 200ms ease-in-out;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 0 red, 0 0 2px 2px red;
+}
