@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import textColorChange from 'utils/textColorChange';
 import css from './Statistics.module.css';
 
@@ -40,3 +41,11 @@ export default function Statistics({
     </div>
   );
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.string.isRequired,
+};
